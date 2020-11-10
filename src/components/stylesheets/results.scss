@@ -4,7 +4,13 @@
   transition: max-height 0.3s;
 
   &.expanded {
-    max-height: 90vh;
+    max-height: 100%;
     overflow: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .results-container {
+    align-self: stretch;
   }
 }
