@@ -1,13 +1,16 @@
 import React, { PureComponent } from 'react';
+
+import Prompt from './prompt';
+import Results from './results';
+
 import './stylesheets/app.scss';
 
 class App extends PureComponent {
   render() {
     return (
       <div className="app">
-        <div className="app-sample">
-          some scintillating content
-        </div>
+        <Prompt />
+        <Results />
       </div>
     );
   }
